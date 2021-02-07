@@ -1,0 +1,13 @@
+header {
+  height: 30vh;
+  background-image: url('./pattern-bg.png');
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    color: #f2f3f4;
+    font-size: 3rem;
+    
+  }
+}

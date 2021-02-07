@@ -1,0 +1,16 @@
+#search {
+  input[type='text'] {
+    height: 1rem;
+    padding: .8rem;
+    border-top-left-radius: .7rem;
+    border-bottom-left-radius: .7rem;
+    width: 50%;
+  }
+
+  input[type='submit'] {
+    height: 1rem;
+    background-color: #000;
+    border-top-right-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+  }
+}
