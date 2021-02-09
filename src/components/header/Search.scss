@@ -1,14 +1,18 @@
 #search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   input[type='text'] {
-    height: 1rem;
     padding: .8rem;
     border-top-left-radius: .7rem;
     border-bottom-left-radius: .7rem;
     width: 50%;
   }
 
-  input[type='submit'] {
-    height: 1rem;
+  button {
+    height: 100%;
+    padding: .8rem;
     background-color: #000;
     border-top-right-radius: .7rem;
     border-bottom-right-radius: .7rem;

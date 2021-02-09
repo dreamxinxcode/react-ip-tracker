@@ -5,7 +5,7 @@ function Search() {
   return (
     <form action="POST" id='search'>
       <input type="text" placeholder='Search for any IP address or domain' />
-      <input type="submit"/>
+      <button type="submit"></button>
     </form>
   )
 }
