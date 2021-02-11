@@ -1,11 +1,14 @@
 import './App.css';
 import Header from './components/header/Header';
+import { SearchProvider } from './SearchContext';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <SearchProvider>
+      <div className="App">
+        <Header />
+      </div>
+    </SearchProvider>
   );
 }
 
