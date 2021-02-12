@@ -1,7 +1,12 @@
 #search {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  form {
+    width: 75%;
+  }
 
   input[type='text'] {
     padding: .8rem;
@@ -10,9 +15,14 @@
     width: 50%;
   }
 
+  input:focus {
+    outline: none;
+  }
+
   button {
-    height: 100%;
     padding: .8rem;
+    color: #fff;
+    font-weight: 900;
     background-color: #000;
     border-top-right-radius: .7rem;
     border-bottom-right-radius: .7rem;
