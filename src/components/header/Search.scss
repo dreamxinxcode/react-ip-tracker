@@ -10,9 +10,14 @@
 
   input[type='text'] {
     padding: .8rem;
+    border: none;
     border-top-left-radius: .7rem;
     border-bottom-left-radius: .7rem;
     width: 50%;
+  }
+
+  input::placeholder {
+    font-family: Lexend Mega;
   }
 
   input:focus {
@@ -24,7 +29,12 @@
     color: #fff;
     font-weight: 900;
     background-color: #000;
+    border: none;
     border-top-right-radius: .7rem;
     border-bottom-right-radius: .7rem;
+  }
+
+  button:focus {
+    outline: none;
   }
 }

@@ -1,10 +1,17 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './Info.scss';
 import { SearchContext } from '../../SearchContext';
+import axios from 'axios';
 
 function Info() {
-  const [search] = useContext(SearchContext);
+  const [search, setSearch] = useContext(SearchContext);
 
+  useEffect(() => {
+    axios.get('http://ip-api.com/json/')
+    .then(res => setSearch(prev => ({...prev, ip: res.data.query, city: res.data.city, country: res.data.country, isp: res.data.isp, lat: res.data.lat, lon: res.data.lon, regionName: res.data.regionName})))
+    .catch(err => console.log(err));
+  }, []);
+  
   return (
     <div id='info'>
       <div id="ip">

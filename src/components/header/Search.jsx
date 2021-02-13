@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { SearchContext } from '../../SearchContext';
 import './Search.scss';
-import  { searchContext } from '../../SearchContext';
 import axios from 'axios';
 
 function Search() {
