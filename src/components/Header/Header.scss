@@ -3,12 +3,14 @@ header {
   background-image: url('./pattern-bg.png');
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   #title {
     color: #f2f3f4;
     font-family: Lexend Mega;
     font-size: 2.5rem;
     text-align: center;
+    margin: 1.5rem;
   }
 
   span {

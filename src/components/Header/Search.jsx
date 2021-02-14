@@ -13,8 +13,8 @@ function Search() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.get(`http://ip-api.com/json/${search.query}`)
-    .then(res => setSearch(prev => ({...prev, ip: res.data.query, city: res.data.city, country: res.data.country, isp: res.data.isp, lat: res.data.lat, lon: res.data.lon, regionName: res.data.regionName})))
+    axios.get(`https://ip-api.com/json/${search.query}`)
+    .then(res => setSearch(prev => ({...prev, ip: res.data.query, city: res.data.city, country: res.data.country, timezone: res.data.timezone, isp: res.data.isp, lat: res.data.lat, lon: res.data.lon, region: res.data.region})))
     .catch(err => console.log(err));
   }
 

@@ -6,7 +6,7 @@ import Info from './Info';
 function Header() {
   return (
     <header>
-      <h2 id='title'>IP Address Tracker</h2>
+      <h3 id='title'>IP Address Tracker</h3>
       <Search />
       <Info />
     </header>
